@@ -1,51 +1,108 @@
-# Trendyol Ürün Yorum Analizi
+# 🛍️ Trendyol Ürün Yorum Analizi
 
-Bu proje, Trendyol'da satılan ürünlerin yorumlarını analiz ederek duygu analizi yapar ve ürünleri karşılaştırır.
+Bu web uygulaması, Trendyol'daki ürün yorumlarını otomatik olarak analiz eder, duygu analizi yapar ve ürünleri karşılaştırmanıza olanak sağlar.
 
-## Özellikler
+![Uygulama Önizlemesi](screenshot.png)
 
-- Ürün yorumlarını otomatik toplama
-- Duygu analizi
-- Ürün karşılaştırma (maksimum 10 ürün)
-- En iyi ve en kötü 5 konu analizi
-- Görsel grafikler ile sonuç gösterimi
+## ✨ Özellikler
 
-## Kurulum
+- 🤖 Otomatik yorum toplama ve analiz
+- 📊 Gelişmiş duygu analizi
+- 🔄 10 ürüne kadar karşılaştırma
+- 📈 Görsel grafiklerle sonuç gösterimi
+- 🏷️ En çok bahsedilen konuların analizi
+- 🎯 Olumlu/olumsuz yorum oranları
+- 📱 Mobil uyumlu tasarım
 
-1. Gerekli Python paketlerini yükleyin:
+## 🚀 Kurulum
+
+### Gereksinimler
+
+- Python 3.8 veya üzeri
+- pip (Python paket yöneticisi)
+- Git
+
+### Adımlar
+
+1. Repository'yi klonlayın:
+```bash
+git clone https://github.com/yourusername/trendyol-review-analysis.git
+cd trendyol-review-analysis
+```
+
+2. Virtual environment oluşturun ve aktive edin:
+```bash
+python -m venv venv
+source venv/bin/activate  # MacOS/Linux için
+# veya
+.\venv\Scripts\activate  # Windows için
+```
+
+3. Gerekli paketleri yükleyin:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. NLTK verilerini indirin:
-```python
-import nltk
-nltk.download('vader_lexicon')
-nltk.download('punkt')
-nltk.download('stopwords')
-```
-
-3. Uygulamayı çalıştırın:
+4. Uygulamayı başlatın:
 ```bash
 python app.py
 ```
 
-4. Tarayıcınızda `http://localhost:5000` adresine gidin.
+5. Tarayıcınızda şu adrese gidin:
+```
+http://localhost:5000
+```
 
-## Kullanım
+## 📝 Kullanım
 
-1. Ana sayfada "Ürün Ekle" bölümünden ürün adı ve Trendyol ürün URL'sini girin
-2. En fazla 10 ürün ekleyebilirsiniz
-3. "Ürünleri Analiz Et" butonuna tıklayarak analizi başlatın
-4. Sonuçlar görsel grafikler ve detaylı bilgiler ile gösterilecektir
+1. **Ürün Ekleme:**
+   - "Ürün Ekle" bölümünden ürün adını girin
+   - Trendyol ürün URL'sini yapıştırın
+   - "Ekle" butonuna tıklayın
 
-## Geliştirme
+2. **Analiz:**
+   - İstediğiniz kadar ürün ekleyin (max. 10)
+   - "Ürünleri Analiz Et" butonuna tıklayın
+   - Sonuçları bekleyin
 
-- HTML dosyaları `templates` klasöründe
-- CSS dosyaları `static/css` klasöründe
-- JavaScript dosyaları `static/js` klasöründe bulunmaktadır
+3. **Sonuçlar:**
+   - Karşılaştırmalı duygu analizi grafiği
+   - Her ürün için detaylı analiz
+   - En çok bahsedilen konular
+   - Örnek yorumlar
 
-## Lisans
+## 🔧 Geliştirme
 
-MIT
+Proje yapısı:
+```
+├── app.py              # Flask uygulaması
+├── requirements.txt    # Python bağımlılıkları
+├── static/            # Statik dosyalar
+│   ├── css/          # Stil dosyaları
+│   └── js/           # JavaScript dosyaları
+└── templates/         # HTML şablonları
+```
+
+## 🤝 Katkıda Bulunma
+
+1. Bu repository'yi fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing`)
+5. Bir Pull Request oluşturun
+
+## ⚠️ Notlar
+
+- Bu uygulama eğitim ve araştırma amaçlıdır
+- Trendyol'un kullanım koşullarına uygun kullanılmalıdır
+- Rate limiting ve diğer kısıtlamalara dikkat edilmelidir
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+
+## 📧 İletişim
+
+Sorularınız için bir Issue açabilir veya şu adresten bana ulaşabilirsiniz:
+[GitHub Issues](https://github.com/yourusername/trendyol-review-analysis/issues)
 # tyyorum2
